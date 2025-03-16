@@ -6,28 +6,17 @@
 - [Read text in Vision Studio](https://aka.ms/ai900-ocr)
 - [Analyze images in Vision Studio](https://aka.ms/ai900-image-analysis)
 
+---
+
 ## 1. Detect Faces in Vision Studio
-
-<details>
-
-  <summary>
 
 ### 1.1. Provision an Azure AI services resource
 
-  </summary>
-
 - Start by provisioning an Azure AI services in the Azure portal.
 
-- Search for "Azure AI services" in the Azure portal and create a new Azure AI services resource.
-
-</details>
-
-<details>
-  <summary>
+- Search for `Azure AI services` in the Azure portal and create a new Azure AI services resource.
 
 ### 1.2. Connect Azure AI service resource to Vision Studio
-
-  </summary>
 
 - Navigate to [Vision Studio](https://portal.vision.cognitive.azure.com).
 
@@ -35,114 +24,110 @@
 
 - Under the Try It Out subheading, acknowledge the resource usage policy by reading and checking the box.
 
-<img src="./assets/vision-studio-interface-detect-faces.png" title="Vision Studio interface: Detect faces" /> 
+<div align="center">
+    <img src="./assets/vision-studio-interface-detect-faces.png" title="Vision Studio interface: Detect faces" width="75%" /> 
+</div>
+
 <div align="center">Vision Studio Interface - Detect Faces</div>
-
-</details>
-
-<details>
-  <summary>
 
 ### 1.3. Upload the images
 
-  </summary>
+The following images can be found in the folder <a href= './inputs/detect-faces'>detect-faces</a>.
 
-- The following images can be found in the folder <a href= './inputs/detect-faces'>detect-faces</a>.
-
-<img src="./inputs/detect-faces/store-camera-1.jpg" title="Woman and a girl in a grocery store" />
+<div align="center">
+    <img src="./inputs/detect-faces/store-camera-1.jpg" title="Woman and a girl in a grocery store" width="75%" />
+</div>
 <div align="center">Image 01</div>
 <br />
+<br />
 
-<img src="./inputs/detect-faces/store-camera-2.jpg" title="Man, woman and girl in a grocery store" /> 
+<div align="center">
+    <img src="./inputs/detect-faces/store-camera-2.jpg" title="Man, woman and girl in a grocery store" width="75%" /> 
+</div>
 <div align="center">Image 02</div>
 <br />
+<br />
 
-<img src="./inputs/detect-faces/store-camera-3.jpg" title="A woman with her face covered for a sticker of a plant and a girl in a grocery store." /> 
+<div align="center">
+    <img src="./inputs/detect-faces/store-camera-3.jpg" title="A woman with her face covered for a sticker of a plant and a girl in a grocery store." width="75%" /> 
+</div>
 <div align="center">Image 03</div>
 
-</details>
+### 1.4. Output
 
-<details>
-  <summary>
+**Detected Faces - Image 01:**
 
-### 1.4. Outputs
+<div align="center">
+    <img src="./output/detect-faces/store-camera-1.png" title="Detect face of the image 01" width="75%" />
+</div>
 
-  </summary>
-
-<img src="./output/detect-faces/store-camera-1.png" title="Detect face of the image 01" />
-<div align="center">Results - Image 01</div>
+<div align="center">
+JSON attributes generated <a href= './output/detect-faces/image01-attributes.json'>here</a>.
+</div>
+<br />
 <br />
 
-> JSON attributes generated <a href= './output/detect-faces/image01-attributes.json'>here</a>.
+**Detected Faces - Image 02:**
 
+<div align="center">
+    <img src="./output/detect-faces/store-camera-2.png" title="Detect face of the image 02" width="75%" />
+</div>
+
+<div align="center">
+JSON attributes generated <a href= './output/detect-faces/image02-attributes.json'>here</a>.
+</div>
 <br />
 
-<img src="./output/detect-faces/store-camera-2.png" title="Detect face of the image 02" />
-<div align="center">Results - Image 02</div>
+**Detected Faces - Image 03:**
+
+<div align="center">
+    <img src="./output/detect-faces/store-camera-3.png" title="Detect face of the image 03" width="75%" />
+</div>
 <br />
 
-> JSON attributes generated <a href= './output/detect-faces/image02-attributes.json'>here</a>.
+```
+No face detected
+```
 
 <br />
-
-<img src="./output/detect-faces/store-camera-3.png" title="Detect face of the image 03" />
-<div align="center">Results - Image 03</div>
-
-</details>
 
 ## 2. Read text in Vision Studio
 
-<details>
-  <summary>
-  
 ### 2.1. Navigate to Vision Studio
-  
-  </summary>
 
 - Navigate to [Vision Studio](https://portal.vision.cognitive.azure.com).
 
 - On the Getting started with Vision landing page, **Optical character recognition**, and then the **Extract text from images tile**.
 
 - Under the Try It Out subheading, acknowledge the resource usage policy by reading and checking the box.
-
-<img src="./assets/vision-studio-interface-ocr.png" title="Vision Studio Interface: OCR" />
-
+<div align="center">
+    <img src="./assets/vision-studio-interface-ocr.png" title="Vision Studio Interface: OCR" width="75%" />
+</div>
 <div align="center">Vision Studio Interface - OCR</div>
-</details>
 
-<details>
-  <summary>
-  
 ### 2.2. Upload the images
-  
-  </summary>
 
 - The following images can be found in the folder <a href= './inputs/read-text-ocr'>read-text-ocr</a>.
 
-<img src="./inputs/read-text-ocr/advert.jpg" title="Supermarket advert" />
+<div align="center">
+    <img src="./inputs/read-text-ocr/advert.jpg" title="Supermarket advert" width="75%" />
+</div>
 <div align="center">Image 01</div>
 <br />
 
 <div align="center"> 
-    <img src="./inputs/read-text-ocr/receipt.jpg" title="Receipt" /> 
+    <img src="./inputs/read-text-ocr/receipt.jpg" title="Receipt"  width="50%" /> 
 </div>
-
 <div align="center">Image 02</div>
-
-</details>
-
-<details>
-  <summary>
 
 ### 2.3. Outputs
 
-  </summary>
+**Extracted Text - Image 01:**
 
-<img src="./output/read-text-ocr/advert-ocr.png" title="Supermarket advert's OCR " />
-<div align="center">Results - Image 01</div>
+<div align="center">
+    <img src="./output/read-text-ocr/advert-ocr.png" title="Supermarket advert's OCR" width="75%" />
+</div>
 <br />
-
-> Extracted Text:
 
 ```
 NorthwindTraders
@@ -153,15 +138,18 @@ Open7daysaweek
 
 ```
 
-> JSON attributes generated <a href= './output/read-text-ocr/image01-attributes.json'>here</a>.
-
+<div align="center"> 
+JSON attributes generated <a href= './output/read-text-ocr/image01-attributes.json'>here</a>.
+</div>
+<br />
 <br />
 
-<img src="./output/read-text-ocr/receipt-ocr.png" title="Receipt's OCR" />
-<div align="center">Results - Image 02</div>
-<br />
+**Extracted Text - Image 02:**
 
-> Extracted Text:
+<div align="center">
+    <img src="./output/read-text-ocr/receipt-ocr.png" title="Receipt's OCR" width="75%" />
+</div>
+<br />
 
 ```
 NorthwindTraders
@@ -181,74 +169,73 @@ $1.87
 
 ```
 
-> JSON attributes generated <a href= './output/read-text-ocr/image02-attributes.json'>here</a>.
-
-</details>
+<div align="center"> 
+JSON attributes generated <a href= './output/read-text-ocr/image02-attributes.json'>here</a>.
+</div>
+<br />
 
 ## 3. Analyze images in Visual Studio
 
-<details>
-  <summary>
-  
 ### 3.1. Navigate to Vision Studio
-  
-  </summary>
 
 - Navigate to [Vision Studio](https://portal.vision.cognitive.azure.com).
 
-- On the Getting started with Vision landing page, **Image analysis**, and then the **Add captions to images**.
+- On the Getting started with _Vision_ landing page, **Image analysis**, and then the **Add captions to images**.
 
 - Under the Try It Out subheading, acknowledge the resource usage policy by reading and checking the box.
 
-<img src="./assets/vision-studio-interface-image-analysis.png" title="Vision Studio interface: Image analysis" /> 
+<div align="center">
+    <img src="./assets/vision-studio-interface-image-analysis.png" title="Vision Studio interface: Image analysis" width="75%" /> 
+</div>
 <div align="center">Vision Studio Interface - Image Analysis</div>
 
-</details>
-
-<details>
-  <summary>
-  
-  ### 3.2. Upload the images
-  
-  </summary>
+### 3.2. Upload the images
 
 - The following images can be found in the folder <a href= './inputs/analyze-images'>analyze-images</a>.
 
-<img src="./inputs/analyze-images/store-camera-1.jpg" title="Woman and a girl in a grocery store" />
+<div align="center">
+    <img src="./inputs/analyze-images/store-camera-1.jpg" title="Woman and a girl in a grocery store" width="75%" />
+</div>
 <div align="center">Image 01</div>
 <br />
 
 <div align="center"> 
-    <img src="./inputs/analyze-images/store-camera-2.jpg" title="Woman in a supermarket" /> 
+    <img src="./inputs/analyze-images/store-camera-2.jpg" title="Woman in a supermarket" width="75%" /> 
 </div>
-
 <div align="center">Image 02</div>
 
-</details>
+### 3.3. Output
 
-<details>
-  <summary>
+**Results - Image 01:**
 
-### 3.3. Outputs
-
-  </summary>
-
-<img src="./output/analyze-images/store-camera-1.png" title="Supermarket advert's OCR" />
-<div align="center">Results - Image 01</div>
+<div align="center"> 
+    <img src="./output/analyze-images/store-camera-1.png" title="Supermarket advert's OCR" width="75%" />
+</div>
 <br />
 
-> Caption: A woman and a girl in a grocery store
+Caption:
 
-> JSON attributes generated <a href= "./output/analyze-images/store-camera-1-attributes.json">here</a>.
+```
+A woman and a girl in a grocery store
+```
+
+JSON attributes generated <a href= "./output/analyze-images/store-camera-1-attributes.json">here</a>.
+<br />
+<br />
+
+**Results - Image 02:**
+
+<div align="center"> 
+    <img src="./output/analyze-images/store-camera-2.png" title="Receipt's OCR" width="75%" />
+</div>
+<br />
+
+Caption:
+
+```
+A woman holding a phone while shopping in a grocery store
+```
 
 <br />
 
-<img src="./output/analyze-images/store-camera-2.png" title="Receipt's OCR" />
-<div align="center">Results - Image 02</div>
-<br />
-
-> Caption: A woman holding a phone while shopping in a grocery store
-
-> JSON attributes generated <a href= "./output/analyze-images/store-camera-2-attributes.json">here</a>.
-
-</details>
+JSON attributes generated <a href= "./output/analyze-images/store-camera-2-attributes.json">here</a>.
